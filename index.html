@@ -1,25 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TRIO connects customers with trusted offline retailers across India through a seamless local commerce platform." />
-  <meta name="theme-color" content="#5b35f1" />
-  <title>TRIO — One Platform. Every Store. Every Customer.</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="TRIO connects customers with trusted offline retailers across India through a seamless local commerce platform." name="description"/>
+<meta content="#5b35f1" name="theme-color"/>
+<title>TRIO — One Platform. Every Store. Every Customer.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Outfit:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
     :root{
-      --primary:#5b35f1;
-      --primary-2:#7c5cff;
-      --secondary:#ff6d3f;
+      --primary:#ffb800;
+      --primary-2:#ffca3a;
+      --secondary:#1f1f1f;
       --accent:#15c2a4;
       --ink:#17152a;
       --muted:#6f6b80;
-      --soft:#f6f4ff;
+      --soft:#fff9e8;
       --white:#ffffff;
       --border:rgba(42,35,78,.11);
       --shadow:0 20px 55px rgba(46,33,117,.12);
@@ -33,7 +32,7 @@
       margin:0;
       color:var(--ink);
       background:
-        radial-gradient(circle at 15% 5%, rgba(124,92,255,.13), transparent 27%),
+        radial-gradient(circle at 15% 5%, rgba(255,202,58,.13), transparent 27%),
         radial-gradient(circle at 88% 18%, rgba(255,109,63,.10), transparent 23%),
         #fff;
       font-family:"Manrope",sans-serif;
@@ -51,8 +50,8 @@
       display:inline-flex;align-items:center;gap:8px;
       color:var(--primary);font-weight:800;font-size:.78rem;
       letter-spacing:.12em;text-transform:uppercase;
-      padding:9px 13px;border-radius:999px;background:rgba(91,53,241,.09);
-      border:1px solid rgba(91,53,241,.12);
+      padding:9px 13px;border-radius:999px;background:rgba(255,184,0,.09);
+      border:1px solid rgba(255,184,0,.12);
     }
     h1,h2,h3{font-family:"Outfit",sans-serif;margin:0;line-height:1.08}
     h1{font-size:clamp(2.8rem,6.5vw,5.7rem);letter-spacing:-.055em}
@@ -92,9 +91,9 @@
       border:1px solid transparent;transition:.25s ease;
     }
     .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;box-shadow:0 12px 28px rgba(91,53,241,.28)}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;box-shadow:0 12px 28px rgba(255,184,0,.28)}
     .btn-secondary{background:#fff;color:var(--ink);border-color:var(--border);box-shadow:0 12px 28px rgba(30,24,64,.07)}
-    .btn-outline{color:var(--primary);border-color:rgba(91,53,241,.25);background:rgba(255,255,255,.65)}
+    .btn-outline{color:var(--primary);border-color:rgba(255,184,0,.25);background:rgba(255,255,255,.65)}
     .btn-light{background:#fff;color:var(--primary)}
 
     .hero{min-height:100vh;padding:145px 0 80px;display:flex;align-items:center;position:relative}
@@ -151,7 +150,7 @@
     .card-orders{right:-8px;bottom:120px;animation-delay:1s}
     .card-rating{left:18px;bottom:28px;animation-delay:.5s}
     .orb{position:absolute;border-radius:50%;filter:blur(2px);z-index:-1}
-    .orb.one{width:280px;height:280px;background:rgba(124,92,255,.19);right:3%;top:80px}
+    .orb.one{width:280px;height:280px;background:rgba(255,202,58,.19);right:3%;top:80px}
     .orb.two{width:190px;height:190px;background:rgba(255,109,63,.15);left:6%;bottom:45px}
 
     .logo-strip{padding:25px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(255,255,255,.65)}
@@ -189,7 +188,7 @@
       padding:26px;border-radius:22px;border:1px solid var(--border);background:#fff;
       transition:.3s;position:relative;overflow:hidden;
     }
-    .feature-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:rgba(91,53,241,.18)}
+    .feature-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:rgba(255,184,0,.18)}
     .feature-icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;background:linear-gradient(135deg,#eee9ff,#fff)}
     .feature-card h3{margin:17px 0 8px}
     .feature-card p{font-size:.9rem;margin:0}
@@ -267,7 +266,7 @@
 
     .back-top{
       position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:14px;border:0;
-      background:var(--primary);color:#fff;box-shadow:0 15px 35px rgba(91,53,241,.3);
+      background:var(--primary);color:#fff;box-shadow:0 15px 35px rgba(255,184,0,.3);
       opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;z-index:800;
     }
     .back-top.show{opacity:1;pointer-events:auto;transform:none}
@@ -332,254 +331,347 @@
       *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
       .reveal{opacity:1;transform:none}
     }
-  </style>
-</head>
+  
+
+    /* ===========================
+       TRIO brand logo styling
+       =========================== */
+    .brand-logo{
+      display:inline-flex;
+      align-items:center;
+      gap:11px;
+      min-width:max-content;
+    }
+    .brand-logo__icon{
+      width:54px;
+      height:54px;
+      object-fit:cover;
+      object-position:center;
+      border-radius:15px;
+      background:#fff;
+      box-shadow:0 7px 20px rgba(32,28,18,.14);
+      border:1px solid rgba(31,31,31,.07);
+    }
+    .brand-logo__name{
+      font:800 1.62rem "Outfit",sans-serif;
+      letter-spacing:.06em;
+      color:#1f1f1f;
+    }
+    .site-header.scrolled .brand-logo__icon{
+      width:50px;
+      height:50px;
+    }
+    .hero-brand{
+      width:min(245px,64vw);
+      margin:0 0 22px;
+      padding:10px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(31,31,31,.07);
+      border-radius:24px;
+      box-shadow:0 18px 45px rgba(38,31,10,.12);
+    }
+    .hero-brand img{
+      width:100%;
+      height:auto;
+      border-radius:17px;
+    }
+    .mini-logo-wrap{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      color:#1f1f1f;
+      font:800 .9rem "Outfit",sans-serif;
+    }
+    .mini-logo-image{
+      width:29px;
+      height:29px;
+      border-radius:8px;
+      object-fit:cover;
+      box-shadow:0 3px 8px rgba(31,31,31,.12);
+    }
+    .footer-brand-logo{
+      display:inline-block;
+      width:170px;
+      max-width:100%;
+      padding:8px;
+      background:#fff;
+      border-radius:20px;
+      box-shadow:0 14px 35px rgba(0,0,0,.18);
+    }
+    .footer-brand-logo img{
+      width:100%;
+      border-radius:14px;
+    }
+    .logo-watermark{
+      position:absolute;
+      right:4%;
+      bottom:4%;
+      width:110px;
+      opacity:.08;
+      transform:rotate(-8deg);
+      pointer-events:none;
+      border-radius:22px;
+    }
+    .about-panel .logo-watermark{
+      filter:saturate(.9);
+    }
+    .stats-brand{
+      width:92px;
+      padding:6px;
+      margin:0 auto 24px;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 12px 28px rgba(0,0,0,.14);
+    }
+    .stats-brand img{
+      width:100%;
+      border-radius:13px;
+    }
+    .cta-brand{
+      width:105px;
+      padding:7px;
+      margin-bottom:18px;
+      border-radius:18px;
+      background:#fff;
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+    .cta-brand img{
+      width:100%;
+      border-radius:12px;
+    }
+    @media (max-width:760px){
+      .brand-logo__icon{width:46px;height:46px;border-radius:13px}
+      .brand-logo__name{font-size:1.35rem}
+      .hero-brand{margin-left:auto;margin-right:auto}
+      .footer-brand-logo{width:155px}
+    }
+    @media (max-width:480px){
+      .brand-logo__name{display:none}
+      .brand-logo__icon{width:48px;height:48px}
+    }
+    </style>
+<link href="assets/trio-logo-icon.jpg" rel="icon" type="image/jpeg"/></head>
 <body>
-  <header class="site-header" id="header">
-    <div class="container nav">
-      <a class="logo" href="#home" aria-label="TRIO home">
-        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#5b35f1"/><stop offset="1" stop-color="#ff6d3f"/></linearGradient></defs>
-          <rect width="48" height="48" rx="15" fill="url(#g)"/>
-          <path d="M12 15h24M18 15v20M30 15v20" stroke="white" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-        TRIO
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#categories">Categories</a>
-        <a href="#retailers">For Retailers</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-actions">
-        <a class="btn btn-outline" href="#retailers">Become a Seller</a>
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-      <a href="#about">About</a><a href="#features">Features</a><a href="#categories">Categories</a>
-      <a href="#retailers">For Retailers</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">India's local commerce platform</span>
-          <h1>Everything You Need. <span class="gradient-text">From Stores Around You.</span></h1>
-          <p>TRIO brings trusted offline retailers into one seamless digital marketplace. Shop nearby, compare competitive prices, enjoy fast delivery and support local businesses.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#download">Download App <span>→</span></a>
-            <a class="btn btn-secondary" href="#retailers">Become a Seller</a>
-          </div>
-          <div class="hero-trust">
-            <div class="avatar-stack"><span>A</span><span>R</span><span>S</span><span>+</span></div>
-            <div><div class="stars">★★★★★</div><small>Trusted by growing local communities</small></div>
-          </div>
-        </div>
-
-        <div class="hero-visual" aria-label="TRIO mobile app preview">
-          <div class="orb one"></div><div class="orb two"></div>
-          <div class="phone">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mini-top"><span class="mini-logo">TRIO</span><span>🔔</span></div>
-              <div class="searchbar">⌕ Search products and stores</div>
-              <div class="mini-banner"><b>Shop local. Get it fast.</b><small>Up to 30% off nearby stores</small></div>
-              <div class="mini-section-title">Categories</div>
-              <div class="mini-categories"><div class="mini-category">👕</div><div class="mini-category">📱</div><div class="mini-category">💻</div><div class="mini-category">🛋️</div></div>
-              <div class="mini-section-title">Popular near you</div>
-              <div class="mini-products">
-                <div class="mini-product"><div class="mini-product-art">🎧</div><b>Wireless Headset</b><small>₹1,499</small></div>
-                <div class="mini-product"><div class="mini-product-art">⌚</div><b>Smart Watch</b><small>₹2,299</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="float-card card-delivery"><div class="icon">⚡</div><div><b>Fast local delivery</b><span>From stores near you</span></div></div>
-          <div class="float-card card-orders"><div class="icon">📦</div><div><b>Order confirmed</b><span>Arriving today</span></div></div>
-          <div class="float-card card-rating"><div class="icon">★</div><div><b>4.9 customer rating</b><span>Verified local sellers</span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <div class="logo-strip">
-      <div class="container trust-row"><span>Built for India's offline retail ecosystem</span><div class="trust-pills"><span class="trust-pill">Verified Retailers</span><span class="trust-pill">Secure Payments</span><span class="trust-pill">Live Tracking</span><span class="trust-pill">Easy Returns</span></div></div>
-    </div>
-
-    <section class="section" id="about">
-      <div class="container about-grid">
-        <div class="about-panel reveal">
-          <span class="eyebrow" style="background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.15)">Digital storefronts</span>
-          <div class="store-window">
-            <div class="store-top"><div class="store-logo">🏪</div><div><h3>Metro Lifestyle Store</h3><span class="status">● Open · 1.2 km away</span></div></div>
-            <div class="store-items"><div class="store-item">👟</div><div class="store-item">👔</div><div class="store-item">👜</div></div>
-          </div>
-        </div>
-        <div class="about-copy reveal">
-          <span class="eyebrow">About TRIO</span>
-          <h2>Bringing Offline Retailers to the <span class="gradient-text">Digital World</span></h2>
-          <p class="lead">TRIO helps offline retailers compete and grow in the digital era while giving customers access to millions of products from trusted nearby stores.</p>
-          <p>From fashion and electronics to furniture, beauty and everyday essentials, TRIO places your neighborhood marketplace at your fingertips.</p>
-          <div class="vision-grid">
-            <article class="vision-card"><h3>◎ Our Vision</h3><p>Become India's largest digital marketplace connecting every retailer with every customer.</p></article>
-            <article class="vision-card"><h3>↗ Our Mission</h3><div class="mission-list"><span class="mission-item"><b class="check">✓</b> Empower retailers with technology</span><span class="mission-item"><b class="check">✓</b> Help businesses grow revenue</span><span class="mission-item"><b class="check">✓</b> Deliver world-class shopping</span></div></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="features">
-      <div class="container">
-        <div class="section-head reveal"><div><span class="eyebrow">Why choose TRIO</span><h2>Local shopping, <span class="gradient-text">upgraded.</span></h2></div><p>Everything customers and retailers need to buy, sell and grow with confidence.</p></div>
-        <div class="feature-grid">
-          <article class="feature-card reveal"><div class="feature-icon">✓</div><h3>Trusted Retailers</h3><p>Shop confidently from verified businesses operating in your city.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">⚡</div><h3>Fast Delivery</h3><p>Receive orders quickly because products come from nearby stores.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">🔒</div><h3>Secure Payments</h3><p>Protected checkout through trusted online payment gateways.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">◎</div><h3>Live Order Tracking</h3><p>Follow every order from confirmation through doorstep delivery.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">↩</div><h3>Easy Returns</h3><p>A simple and transparent return experience for eligible products.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">☏</div><h3>Customer Support</h3><p>Dedicated assistance whenever customers or sellers need help.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="categories">
-      <div class="container">
-        <div class="section-head reveal"><div><span class="eyebrow">Product categories</span><h2>Discover what you need, <span class="gradient-text">nearby.</span></h2></div><p>Browse popular categories from local businesses and discover something new every day.</p></div>
-        <div class="category-controls reveal">
-          <button class="category-filter active" data-filter="all">All</button>
-          <button class="category-filter" data-filter="tech">Technology</button>
-          <button class="category-filter" data-filter="lifestyle">Lifestyle</button>
-          <button class="category-filter" data-filter="home">Home</button>
-          <button class="category-filter" data-filter="family">Family</button>
-        </div>
-        <div class="category-grid" id="categoryGrid">
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">👗</div><b>Fashion</b></div></article>
-          <article class="category-card reveal" data-group="tech"><div><div class="cat-icon">🎧</div><b>Electronics</b></div></article>
-          <article class="category-card reveal" data-group="tech"><div><div class="cat-icon">📱</div><b>Mobiles</b></div></article>
-          <article class="category-card reveal" data-group="tech"><div><div class="cat-icon">💻</div><b>Laptops</b></div></article>
-          <article class="category-card reveal" data-group="home"><div><div class="cat-icon">🧺</div><b>Home Appliances</b></div></article>
-          <article class="category-card reveal" data-group="home"><div><div class="cat-icon">🛋️</div><b>Furniture</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">💄</div><b>Beauty & Care</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🏋️</div><b>Sports & Fitness</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">📚</div><b>Books</b></div></article>
-          <article class="category-card reveal" data-group="family"><div><div class="cat-icon">🧸</div><b>Toys</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🚗</div><b>Automotive</b></div></article>
-          <article class="category-card reveal" data-group="family"><div><div class="cat-icon">🐾</div><b>Pet Supplies</b></div></article>
-          <article class="category-card reveal" data-group="family"><div><div class="cat-icon">🍼</div><b>Baby Products</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">💍</div><b>Jewelry</b></div></article>
-          <article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🎁</div><b>Gifts</b></div></article>
-          <article class="category-card reveal" data-group="all"><div><div class="cat-icon">＋</div><b>More</b></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="retailers">
-      <div class="container">
-        <div class="audience-grid">
-          <article class="audience-card customer reveal">
-            <span class="eyebrow">For customers</span><h2>Shop Smarter</h2>
-            <p>Discover more products, better prices and dependable sellers from your own city.</p>
-            <ul><li>Millions of products</li><li>Trusted retailer sellers</li><li>Exclusive discounts</li><li>Secure checkout</li><li>Order tracking</li><li>Easy returns</li></ul>
-            <a class="btn btn-primary" href="#download">Start Shopping →</a>
-          </article>
-          <article class="audience-card seller reveal">
-            <span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.14)">For retailers</span><h2>Grow Your Business with TRIO</h2>
-            <p>Join a growing retailer community and take your local business online without technical complexity.</p>
-            <ul><li>Create a digital store</li><li>Manage inventory</li><li>Receive online orders</li><li>Reach more customers</li><li>Analytics dashboard</li><li>Marketing tools</li><li>Secure payments</li><li>Growth insights</li></ul>
-            <a class="btn btn-light" href="mailto:triocommerce03@gmail.com?subject=TRIO Seller Registration">Become a Seller →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="smart-features">
-      <div class="container">
-        <div class="section-head reveal"><div><span class="eyebrow">Platform features</span><h2>Designed for a <span class="gradient-text">better experience.</span></h2></div><p>Smart technology makes product discovery, checkout and order management effortless.</p></div>
-        <div class="feature-grid">
-          <article class="feature-card reveal"><div class="feature-icon">⌕</div><h3>Smart Search</h3><p>Find products, categories and nearby sellers instantly.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">✦</div><h3>AI Recommendations</h3><p>Discover relevant products tailored to your interests.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">₹</div><h3>Multiple Payments</h3><p>UPI, cards, net banking, wallets and cash on delivery.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">♡</div><h3>Wishlist</h3><p>Save products you love and return to them later.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">%</div><h3>Offers & Coupons</h3><p>Enjoy exclusive discounts from participating sellers.</p></article>
-          <article class="feature-card reveal"><div class="feature-icon">🔔</div><h3>Notifications</h3><p>Receive instant updates for every important order event.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container stats-wrap reveal">
-        <div class="stats-grid">
-          <div class="stat"><strong data-count="10000" data-suffix="+">0</strong><span>Retailers</span></div>
-          <div class="stat"><strong data-count="10" data-suffix=" Lakh+">0</strong><span>Products</span></div>
-          <div class="stat"><strong data-count="1" data-suffix=" Lakh+">0</strong><span>Customers</span></div>
-          <div class="stat"><strong data-count="100" data-suffix="+">0</strong><span>Cities Targeted</span></div>
-          <div class="stat"><strong data-count="100" data-suffix="%">0</strong><span>Secure Platform</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-head reveal"><div><span class="eyebrow">Customer reviews</span><h2>What people say about <span class="gradient-text">TRIO.</span></h2></div></div>
-        <div class="testimonial-grid">
-          <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“TRIO helped me find products from nearby stores within minutes.”</blockquote><div class="reviewer"><div class="reviewer-avatar">AK</div><div><b>Arun Kumar</b><br><small>Customer</small></div></div></article>
-          <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“As a retailer, my sales increased after joining TRIO.”</blockquote><div class="reviewer"><div class="reviewer-avatar">RS</div><div><b>Riya Stores</b><br><small>Retail Partner</small></div></div></article>
-          <article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“Fast delivery and excellent customer support.”</blockquote><div class="reviewer"><div class="reviewer-avatar">SP</div><div><b>Shalini Priya</b><br><small>Customer</small></div></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container faq-layout">
-        <div class="reveal"><span class="eyebrow">FAQs</span><h2>Questions? <span class="gradient-text">Answered.</span></h2><p class="lead">Everything you need to know about shopping and selling through TRIO.</p></div>
-        <div class="faq-list">
-          <article class="faq-item reveal open"><button class="faq-question">What is TRIO?<span class="plus">+</span></button><div class="faq-answer"><p>TRIO is a local commerce platform connecting customers with nearby verified offline retailers through a seamless digital shopping experience.</p></div></article>
-          <article class="faq-item reveal"><button class="faq-question">Is TRIO available across India?<span class="plus">+</span></button><div class="faq-answer"><p>TRIO is expanding city by city with the goal of serving customers and retailers across India.</p></div></article>
-          <article class="faq-item reveal"><button class="faq-question">Can anyone become a seller?<span class="plus">+</span></button><div class="faq-answer"><p>Any eligible retailer can apply, complete the required verification process and begin selling through TRIO.</p></div></article>
-          <article class="faq-item reveal"><button class="faq-question">Is online payment secure?<span class="plus">+</span></button><div class="faq-answer"><p>Yes. Payments are processed through secure payment gateways using industry-standard safeguards.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="contact">
-      <div class="container career-contact">
-        <article class="panel reveal"><span class="eyebrow">Careers</span><h2>Build the future of local commerce.</h2><p>Join our mission to transform how India shops and how local retailers grow.</p><div class="roles"><span class="role">Software Engineers</span><span class="role">UI/UX Designers</span><span class="role">Sales Executives</span><span class="role">Operations Managers</span><span class="role">Customer Support</span></div><a class="btn btn-primary" style="margin-top:25px" href="mailto:triocommerce03@gmail.com?subject=Career Opportunity at TRIO">Apply Now →</a></article>
-        <article class="panel reveal"><span class="eyebrow">Contact us</span><h2>Let's connect.</h2><p>Reach out to our team for customer, seller, partnership or career enquiries.</p><div class="contact-list"><a class="contact-item" href="mailto:triocommerce03@gmail.com"><div class="ci">✉</div><div><b>Email</b><span>triocommerce03@gmail.com</span></div></a><a class="contact-item" href="tel:+918940421744"><div class="ci">☏</div><div><b>Phone</b><span>+91 89404 21744</span></div></a><div class="contact-item"><div class="ci">⌖</div><div><b>Office</b><span>Coimbatore, Tamil Nadu, India</span></div></div></div></article>
-      </div>
-    </section>
-
-    <section class="cta" id="download">
-      <div class="container cta-box reveal">
-        <div><span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.14)">Get started</span><h2>One platform. Every store. Every customer.</h2><p>Empowering offline retailers. Simplifying everyday shopping.</p></div>
-        <div class="cta-actions"><a class="btn btn-light" href="#" id="downloadBtn">Download App</a><a class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.25)" href="#retailers">Become a Seller</a></div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="logo" href="#home">
-            <svg class="logo-mark" viewBox="0 0 48 48"><rect width="48" height="48" rx="15" fill="#5b35f1"/><path d="M12 15h24M18 15v20M30 15v20" stroke="white" stroke-width="5" stroke-linecap="round"/></svg>TRIO
-          </a>
-          <p>India's next-generation local commerce platform connecting every retailer with every customer.</p>
-        </div>
-        <div class="footer-col"><h4>Company</h4><a href="#about">About</a><a href="#contact">Careers</a><a href="#">Press</a><a href="#">Blog</a></div>
-        <div class="footer-col"><h4>Customers</h4><a href="#categories">Shop</a><a href="#faq">Help Center</a><a href="#">Track Order</a><a href="#">Returns</a></div>
-        <div class="footer-col"><h4>Sellers</h4><a href="#retailers">Become a Seller</a><a href="#">Seller Dashboard</a><a href="#contact">Seller Support</a></div>
-        <div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms & Conditions</a><a href="#">Refund Policy</a><a href="#">Cookie Policy</a></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> TRIO Commerce. All rights reserved.</span><span>Made for local businesses across India.</span></div>
-    </div>
-  </footer>
-
-  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
-
-  <script>
+<header class="site-header" id="header">
+<div class="container nav">
+<a aria-label="TRIO home" class="brand-logo" href="#home"><img alt="TRIO shopping logo" class="brand-logo__icon" src="assets/trio-logo-icon.jpg"/><span class="brand-logo__name">TRIO</span></a>
+<nav aria-label="Primary navigation" class="nav-links">
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#categories">Categories</a>
+<a href="#retailers">For Retailers</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+<a class="btn btn-outline" href="#retailers">Become a Seller</a>
+<button aria-expanded="false" aria-label="Open menu" class="menu-btn" id="menuBtn"><span></span><span></span><span></span></button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu">
+<a href="#about">About</a><a href="#features">Features</a><a href="#categories">Categories</a>
+<a href="#retailers">For Retailers</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div class="hero-copy"><div class="hero-brand"><img alt="TRIO – Everything Nearby" src="assets/trio-logo-full.jpg"/></div>
+<span class="eyebrow">India's local commerce platform</span>
+<h1>Everything You Need. <span class="gradient-text">From Stores Around You.</span></h1>
+<p>TRIO brings trusted offline retailers into one seamless digital marketplace. Shop nearby, compare competitive prices, enjoy fast delivery and support local businesses.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#download">Download App <span>→</span></a>
+<a class="btn btn-secondary" href="#retailers">Become a Seller</a>
+</div>
+<div class="hero-trust">
+<div class="avatar-stack"><span>A</span><span>R</span><span>S</span><span>+</span></div>
+<div><div class="stars">★★★★★</div><small>Trusted by growing local communities</small></div>
+</div>
+</div>
+<div aria-label="TRIO mobile app preview" class="hero-visual">
+<div class="orb one"></div><div class="orb two"></div>
+<div class="phone">
+<div class="phone-notch"></div>
+<div class="phone-screen">
+<div class="mini-top"><div class="mini-logo-wrap"><img alt="" class="mini-logo-image" src="assets/trio-logo-icon.jpg"/><span>TRIO</span></div><span>🔔</span></div>
+<div class="searchbar">⌕ Search products and stores</div>
+<div class="mini-banner"><b>Shop local. Get it fast.</b><small>Up to 30% off nearby stores</small></div>
+<div class="mini-section-title">Categories</div>
+<div class="mini-categories"><div class="mini-category">👕</div><div class="mini-category">📱</div><div class="mini-category">💻</div><div class="mini-category">🛋️</div></div>
+<div class="mini-section-title">Popular near you</div>
+<div class="mini-products">
+<div class="mini-product"><div class="mini-product-art">🎧</div><b>Wireless Headset</b><small>₹1,499</small></div>
+<div class="mini-product"><div class="mini-product-art">⌚</div><b>Smart Watch</b><small>₹2,299</small></div>
+</div>
+</div>
+</div>
+<div class="float-card card-delivery"><div class="icon">⚡</div><div><b>Fast local delivery</b><span>From stores near you</span></div></div>
+<div class="float-card card-orders"><div class="icon">📦</div><div><b>Order confirmed</b><span>Arriving today</span></div></div>
+<div class="float-card card-rating"><div class="icon">★</div><div><b>4.9 customer rating</b><span>Verified local sellers</span></div></div>
+</div>
+</div>
+</section>
+<div class="logo-strip">
+<div class="container trust-row"><span>Built for India's offline retail ecosystem</span><div class="trust-pills"><span class="trust-pill">Verified Retailers</span><span class="trust-pill">Secure Payments</span><span class="trust-pill">Live Tracking</span><span class="trust-pill">Easy Returns</span></div></div>
+</div>
+<section class="section" id="about">
+<div class="container about-grid">
+<div class="about-panel reveal">
+<span class="eyebrow" style="background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.15)">Digital storefronts</span>
+<div class="store-window">
+<div class="store-top"><div class="store-logo">🏪</div><div><h3>Metro Lifestyle Store</h3><span class="status">● Open · 1.2 km away</span></div></div>
+<div class="store-items"><div class="store-item">👟</div><div class="store-item">👔</div><div class="store-item">👜</div></div>
+</div>
+<img alt="" aria-hidden="true" class="logo-watermark" src="assets/trio-logo-icon.jpg"/></div>
+<div class="about-copy reveal">
+<span class="eyebrow">About TRIO</span>
+<h2>Bringing Offline Retailers to the <span class="gradient-text">Digital World</span></h2>
+<p class="lead">TRIO helps offline retailers compete and grow in the digital era while giving customers access to millions of products from trusted nearby stores.</p>
+<p>From fashion and electronics to furniture, beauty and everyday essentials, TRIO places your neighborhood marketplace at your fingertips.</p>
+<div class="vision-grid">
+<article class="vision-card"><h3>◎ Our Vision</h3><p>Become India's largest digital marketplace connecting every retailer with every customer.</p></article>
+<article class="vision-card"><h3>↗ Our Mission</h3><div class="mission-list"><span class="mission-item"><b class="check">✓</b> Empower retailers with technology</span><span class="mission-item"><b class="check">✓</b> Help businesses grow revenue</span><span class="mission-item"><b class="check">✓</b> Deliver world-class shopping</span></div></article>
+</div>
+</div>
+</div>
+</section>
+<section class="section section-soft" id="features">
+<div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Why choose TRIO</span><h2>Local shopping, <span class="gradient-text">upgraded.</span></h2></div><p>Everything customers and retailers need to buy, sell and grow with confidence.</p></div>
+<div class="feature-grid">
+<article class="feature-card reveal"><div class="feature-icon">✓</div><h3>Trusted Retailers</h3><p>Shop confidently from verified businesses operating in your city.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">⚡</div><h3>Fast Delivery</h3><p>Receive orders quickly because products come from nearby stores.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🔒</div><h3>Secure Payments</h3><p>Protected checkout through trusted online payment gateways.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">◎</div><h3>Live Order Tracking</h3><p>Follow every order from confirmation through doorstep delivery.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">↩</div><h3>Easy Returns</h3><p>A simple and transparent return experience for eligible products.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">☏</div><h3>Customer Support</h3><p>Dedicated assistance whenever customers or sellers need help.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="categories">
+<div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Product categories</span><h2>Discover what you need, <span class="gradient-text">nearby.</span></h2></div><p>Browse popular categories from local businesses and discover something new every day.</p></div>
+<div class="category-controls reveal">
+<button class="category-filter active" data-filter="all">All</button>
+<button class="category-filter" data-filter="tech">Technology</button>
+<button class="category-filter" data-filter="lifestyle">Lifestyle</button>
+<button class="category-filter" data-filter="home">Home</button>
+<button class="category-filter" data-filter="family">Family</button>
+</div>
+<div class="category-grid" id="categoryGrid">
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">👗</div><b>Fashion</b></div></article>
+<article class="category-card reveal" data-group="tech"><div><div class="cat-icon">🎧</div><b>Electronics</b></div></article>
+<article class="category-card reveal" data-group="tech"><div><div class="cat-icon">📱</div><b>Mobiles</b></div></article>
+<article class="category-card reveal" data-group="tech"><div><div class="cat-icon">💻</div><b>Laptops</b></div></article>
+<article class="category-card reveal" data-group="home"><div><div class="cat-icon">🧺</div><b>Home Appliances</b></div></article>
+<article class="category-card reveal" data-group="home"><div><div class="cat-icon">🛋️</div><b>Furniture</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">💄</div><b>Beauty &amp; Care</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🏋️</div><b>Sports &amp; Fitness</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">📚</div><b>Books</b></div></article>
+<article class="category-card reveal" data-group="family"><div><div class="cat-icon">🧸</div><b>Toys</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🚗</div><b>Automotive</b></div></article>
+<article class="category-card reveal" data-group="family"><div><div class="cat-icon">🐾</div><b>Pet Supplies</b></div></article>
+<article class="category-card reveal" data-group="family"><div><div class="cat-icon">🍼</div><b>Baby Products</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">💍</div><b>Jewelry</b></div></article>
+<article class="category-card reveal" data-group="lifestyle"><div><div class="cat-icon">🎁</div><b>Gifts</b></div></article>
+<article class="category-card reveal" data-group="all"><div><div class="cat-icon">＋</div><b>More</b></div></article>
+</div>
+</div>
+</section>
+<section class="section section-soft" id="retailers">
+<div class="container">
+<div class="audience-grid">
+<article class="audience-card customer reveal">
+<span class="eyebrow">For customers</span><h2>Shop Smarter</h2>
+<p>Discover more products, better prices and dependable sellers from your own city.</p>
+<ul><li>Millions of products</li><li>Trusted retailer sellers</li><li>Exclusive discounts</li><li>Secure checkout</li><li>Order tracking</li><li>Easy returns</li></ul>
+<a class="btn btn-primary" href="#download">Start Shopping →</a>
+</article>
+<article class="audience-card seller reveal">
+<span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.14)">For retailers</span><h2>Grow Your Business with TRIO</h2>
+<p>Join a growing retailer community and take your local business online without technical complexity.</p>
+<ul><li>Create a digital store</li><li>Manage inventory</li><li>Receive online orders</li><li>Reach more customers</li><li>Analytics dashboard</li><li>Marketing tools</li><li>Secure payments</li><li>Growth insights</li></ul>
+<a class="btn btn-light" href="mailto:triocommerce03@gmail.com?subject=TRIO Seller Registration">Become a Seller →</a>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="smart-features">
+<div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Platform features</span><h2>Designed for a <span class="gradient-text">better experience.</span></h2></div><p>Smart technology makes product discovery, checkout and order management effortless.</p></div>
+<div class="feature-grid">
+<article class="feature-card reveal"><div class="feature-icon">⌕</div><h3>Smart Search</h3><p>Find products, categories and nearby sellers instantly.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">✦</div><h3>AI Recommendations</h3><p>Discover relevant products tailored to your interests.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">₹</div><h3>Multiple Payments</h3><p>UPI, cards, net banking, wallets and cash on delivery.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">♡</div><h3>Wishlist</h3><p>Save products you love and return to them later.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">%</div><h3>Offers &amp; Coupons</h3><p>Enjoy exclusive discounts from participating sellers.</p></article>
+<article class="feature-card reveal"><div class="feature-icon">🔔</div><h3>Notifications</h3><p>Receive instant updates for every important order event.</p></article>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container stats-wrap reveal"><div class="stats-brand"><img alt="TRIO" src="assets/trio-logo-icon.jpg"/></div>
+<div class="stats-grid">
+<div class="stat"><strong data-count="10000" data-suffix="+">0</strong><span>Retailers</span></div>
+<div class="stat"><strong data-count="10" data-suffix=" Lakh+">0</strong><span>Products</span></div>
+<div class="stat"><strong data-count="1" data-suffix=" Lakh+">0</strong><span>Customers</span></div>
+<div class="stat"><strong data-count="100" data-suffix="+">0</strong><span>Cities Targeted</span></div>
+<div class="stat"><strong data-count="100" data-suffix="%">0</strong><span>Secure Platform</span></div>
+</div>
+</div>
+</section>
+<section class="section section-soft">
+<div class="container">
+<div class="section-head reveal"><div><span class="eyebrow">Customer reviews</span><h2>What people say about <span class="gradient-text">TRIO.</span></h2></div></div>
+<div class="testimonial-grid">
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“TRIO helped me find products from nearby stores within minutes.”</blockquote><div class="reviewer"><div class="reviewer-avatar">AK</div><div><b>Arun Kumar</b><br/><small>Customer</small></div></div></article>
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“As a retailer, my sales increased after joining TRIO.”</blockquote><div class="reviewer"><div class="reviewer-avatar">RS</div><div><b>Riya Stores</b><br/><small>Retail Partner</small></div></div></article>
+<article class="testimonial reveal"><div class="stars">★★★★★</div><blockquote>“Fast delivery and excellent customer support.”</blockquote><div class="reviewer"><div class="reviewer-avatar">SP</div><div><b>Shalini Priya</b><br/><small>Customer</small></div></div></article>
+</div>
+</div>
+</section>
+<section class="section" id="faq">
+<div class="container faq-layout">
+<div class="reveal"><span class="eyebrow">FAQs</span><h2>Questions? <span class="gradient-text">Answered.</span></h2><p class="lead">Everything you need to know about shopping and selling through TRIO.</p></div>
+<div class="faq-list">
+<article class="faq-item reveal open"><button class="faq-question">What is TRIO?<span class="plus">+</span></button><div class="faq-answer"><p>TRIO is a local commerce platform connecting customers with nearby verified offline retailers through a seamless digital shopping experience.</p></div></article>
+<article class="faq-item reveal"><button class="faq-question">Is TRIO available across India?<span class="plus">+</span></button><div class="faq-answer"><p>TRIO is expanding city by city with the goal of serving customers and retailers across India.</p></div></article>
+<article class="faq-item reveal"><button class="faq-question">Can anyone become a seller?<span class="plus">+</span></button><div class="faq-answer"><p>Any eligible retailer can apply, complete the required verification process and begin selling through TRIO.</p></div></article>
+<article class="faq-item reveal"><button class="faq-question">Is online payment secure?<span class="plus">+</span></button><div class="faq-answer"><p>Yes. Payments are processed through secure payment gateways using industry-standard safeguards.</p></div></article>
+</div>
+</div>
+</section>
+<section class="section section-soft" id="contact">
+<div class="container career-contact">
+<article class="panel reveal"><span class="eyebrow">Careers</span><h2>Build the future of local commerce.</h2><p>Join our mission to transform how India shops and how local retailers grow.</p><div class="roles"><span class="role">Software Engineers</span><span class="role">UI/UX Designers</span><span class="role">Sales Executives</span><span class="role">Operations Managers</span><span class="role">Customer Support</span></div><a class="btn btn-primary" href="mailto:triocommerce03@gmail.com?subject=Career Opportunity at TRIO" style="margin-top:25px">Apply Now →</a></article>
+<article class="panel reveal"><span class="eyebrow">Contact us</span><h2>Let's connect.</h2><p>Reach out to our team for customer, seller, partnership or career enquiries.</p><div class="contact-list"><a class="contact-item" href="mailto:triocommerce03@gmail.com"><div class="ci">✉</div><div><b>Email</b><span>triocommerce03@gmail.com</span></div></a><a class="contact-item" href="tel:+918940421744"><div class="ci">☏</div><div><b>Phone</b><span>+91 89404 21744</span></div></a><div class="contact-item"><div class="ci">⌖</div><div><b>Office</b><span>Coimbatore, Tamil Nadu, India</span></div></div></div></article>
+</div>
+</section>
+<section class="cta" id="download">
+<div class="container cta-box reveal">
+<div><div class="cta-brand"><img alt="TRIO" src="assets/trio-logo-icon.jpg"/></div><span class="eyebrow" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.14)">Get started</span><h2>One platform. Every store. Every customer.</h2><p>Empowering offline retailers. Simplifying everyday shopping.</p></div>
+<div class="cta-actions"><a class="btn btn-light" href="#" id="downloadBtn">Download App</a><a class="btn btn-outline" href="#retailers" style="color:#fff;border-color:rgba(255,255,255,.25)">Become a Seller</a></div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="footer-brand-logo" href="#home"><img alt="TRIO – Everything Nearby" src="assets/trio-logo-full.jpg"/></a>
+<p>India's next-generation local commerce platform connecting every retailer with every customer.</p>
+</div>
+<div class="footer-col"><h4>Company</h4><a href="#about">About</a><a href="#contact">Careers</a><a href="#">Press</a><a href="#">Blog</a></div>
+<div class="footer-col"><h4>Customers</h4><a href="#categories">Shop</a><a href="#faq">Help Center</a><a href="#">Track Order</a><a href="#">Returns</a></div>
+<div class="footer-col"><h4>Sellers</h4><a href="#retailers">Become a Seller</a><a href="#">Seller Dashboard</a><a href="#contact">Seller Support</a></div>
+<div class="footer-col"><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Refund Policy</a><a href="#">Cookie Policy</a></div>
+</div>
+<div class="footer-bottom"><span>© <span id="year"></span> TRIO Commerce. All rights reserved.</span><span>Made for local businesses across India.</span></div>
+</div>
+</footer>
+<button aria-label="Back to top" class="back-top" id="backTop">↑</button>
+<script>
     const header = document.getElementById('header');
     const backTop = document.getElementById('backTop');
     const menuBtn = document.getElementById('menuBtn');
