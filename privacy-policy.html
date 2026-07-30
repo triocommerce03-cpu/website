@@ -1,0 +1,420 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="Learn how TRIO Commerce collects, uses, shares and protects personal information."/>
+      <meta name="theme-color" content="#ffb800"/>
+      <title>Privacy Policy | TRIO Commerce</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"/>
+      <link href="assets/trio-logo-icon.jpg" rel="icon" type="image/jpeg"/>
+      <style>
+:root{
+  --primary:#ffb800;
+  --primary-2:#ffca3a;
+  --secondary:#1f1f1f;
+  --accent:#15c2a4;
+  --ink:#17152a;
+  --muted:#6f6b80;
+  --soft:#fff9e8;
+  --white:#ffffff;
+  --border:rgba(42,35,78,.11);
+  --shadow:0 20px 55px rgba(46,33,117,.12);
+  --radius:24px;
+  --header-h:78px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 15% 5%, rgba(255,202,58,.13), transparent 27%),
+    radial-gradient(circle at 88% 18%, rgba(255,109,63,.10), transparent 23%),
+    #fff;
+  font-family:"Manrope",sans-serif;
+  overflow-x:hidden;
+}
+body.menu-open{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+.container{width:min(1180px, calc(100% - 36px));margin:auto}
+h1,h2,h3{font-family:"Outfit",sans-serif;margin:0;line-height:1.08}
+h1{font-size:clamp(2.7rem,6vw,5rem);letter-spacing:-.05em}
+h2{font-size:clamp(1.65rem,3vw,2.45rem);letter-spacing:-.03em}
+h3{font-size:1.12rem}
+p,li{line-height:1.75;color:var(--muted)}
+.gradient-text{
+  background:linear-gradient(105deg,var(--primary),#8d54ef 52%,var(--secondary));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.site-header{
+  position:fixed;inset:0 0 auto;z-index:1000;height:var(--header-h);
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(18px);
+  box-shadow:0 10px 35px rgba(30,24,64,.08);
+  border-bottom:1px solid rgba(30,24,64,.06);
+}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand-logo{display:inline-flex;align-items:center;gap:11px;min-width:max-content}
+.brand-logo__icon{
+  width:50px;height:50px;object-fit:cover;object-position:center;border-radius:15px;
+  background:#fff;box-shadow:0 7px 20px rgba(32,28,18,.14);
+  border:1px solid rgba(31,31,31,.07);
+}
+.brand-logo__name{font:800 1.62rem "Outfit",sans-serif;letter-spacing:.06em;color:#1f1f1f}
+.nav-links{display:flex;align-items:center;gap:25px;font-weight:700;font-size:.9rem}
+.nav-links a{color:#4e4961;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;border:0;background:transparent;padding:7px}
+.menu-btn span{display:block;width:26px;height:2px;background:var(--ink);margin:5px;border-radius:2px}
+.mobile-menu{display:none}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:49px;padding:0 20px;border-radius:14px;font-weight:800;
+  border:1px solid transparent;transition:.25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;
+  box-shadow:0 12px 28px rgba(255,184,0,.28)
+}
+.btn-outline{color:var(--primary);border-color:rgba(255,184,0,.25);background:rgba(255,255,255,.65)}
+.legal-hero{padding:150px 0 75px;position:relative}
+.legal-hero-grid{display:grid;grid-template-columns:1fr .72fr;gap:60px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;color:var(--primary);font-weight:800;
+  font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:9px 13px;border-radius:999px;background:rgba(255,184,0,.09);
+  border:1px solid rgba(255,184,0,.12);
+}
+.legal-hero p{font-size:1.04rem;max-width:710px;margin:22px 0 0}
+.legal-card{
+  padding:30px;border-radius:30px;background:linear-gradient(145deg,#21183d,#5c39d7);
+  color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden
+}
+.legal-card:after{
+  content:"";position:absolute;width:210px;height:210px;border-radius:50%;
+  background:rgba(255,255,255,.08);right:-70px;top:-80px
+}
+.legal-card img{
+  width:95px;border-radius:18px;padding:6px;background:#fff;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);position:relative;z-index:2
+}
+.legal-card h3{margin:22px 0 8px;position:relative;z-index:2}
+.legal-card p{color:rgba(255,255,255,.75);font-size:.9rem;margin:0;position:relative;z-index:2}
+.meta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.meta-pill{
+  padding:10px 14px;border:1px solid var(--border);border-radius:999px;
+  background:#fff;font-size:.8rem;font-weight:800;color:#5f596e
+}
+.legal-layout{
+  display:grid;grid-template-columns:290px minmax(0,1fr);gap:34px;
+  padding:34px 0 95px;align-items:start
+}
+.toc{
+  position:sticky;top:105px;padding:24px;border-radius:22px;background:#fff;
+  border:1px solid var(--border);box-shadow:0 14px 34px rgba(34,27,78,.07)
+}
+.toc h3{margin-bottom:14px}
+.toc a{
+  display:block;padding:9px 0;color:#6a6478;font-size:.88rem;font-weight:700;
+  border-bottom:1px solid rgba(42,35,78,.07)
+}
+.toc a:last-child{border-bottom:0}
+.toc a:hover{color:var(--primary)}
+.legal-content{display:grid;gap:18px}
+.legal-section{
+  padding:30px;border-radius:22px;border:1px solid var(--border);background:#fff;
+  box-shadow:0 12px 32px rgba(34,27,78,.05)
+}
+.legal-section h2{margin-bottom:14px}
+.legal-section h3{margin:22px 0 8px}
+.legal-section p{margin:0 0 12px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul,.legal-section ol{padding-left:22px;margin:10px 0}
+.notice{
+  padding:18px 20px;border-radius:16px;background:var(--soft);
+  border:1px solid rgba(255,184,0,.18);color:#5e5667
+}
+.contact-box{
+  background:linear-gradient(120deg,#171326,#5532d7);color:#fff;
+  border-radius:22px;padding:28px
+}
+.contact-box p,.contact-box a{color:rgba(255,255,255,.78)}
+.contact-box a{font-weight:800}
+footer{background:#100d1b;color:#fff;padding:60px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:35px}
+.footer-brand-logo{
+  display:inline-block;width:170px;max-width:100%;padding:8px;background:#fff;
+  border-radius:20px;box-shadow:0 14px 35px rgba(0,0,0,.18)
+}
+.footer-brand-logo img{width:100%;border-radius:14px}
+.footer-brand p{color:#a7a2b7;max-width:330px}
+.footer-col h4{margin:4px 0 18px;font-family:"Outfit"}
+.footer-col a{display:block;color:#aaa5b7;margin:10px 0;font-size:.86rem}
+.footer-col a:hover{color:#fff}
+.footer-bottom{
+  margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:20px;color:#888294;
+  font-size:.79rem;flex-wrap:wrap
+}
+.back-top{
+  position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:14px;border:0;
+  background:var(--primary);color:#fff;box-shadow:0 15px 35px rgba(255,184,0,.3);
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;z-index:800
+}
+.back-top.show{opacity:1;pointer-events:auto;transform:none}
+@media(max-width:950px){
+  .nav-links{display:none}.menu-btn{display:block}
+  .mobile-menu{
+    position:fixed;inset:var(--header-h) 0 0;background:#fff;padding:28px;
+    display:flex;flex-direction:column;gap:18px;transform:translateX(100%);transition:.3s
+  }
+  .mobile-menu.open{transform:none}
+  .mobile-menu a{font-size:1.1rem;font-weight:800;padding:8px 0;border-bottom:1px solid var(--border)}
+  .legal-hero-grid{grid-template-columns:1fr}
+  .legal-layout{grid-template-columns:1fr}
+  .toc{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:600px){
+  .container{width:min(100% - 24px,1180px)}
+  .nav-actions .btn{display:none}
+  .brand-logo__name{display:none}
+  .brand-logo__icon{width:48px;height:48px}
+  .legal-hero{padding-top:120px}
+  .legal-section{padding:23px 19px}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+    </head>
+    <body>
+      <header class="site-header">
+        <div class="container nav">
+          <a class="brand-logo" href="index.html" aria-label="TRIO home">
+            <img class="brand-logo__icon" src="assets/trio-logo-icon.jpg" alt="TRIO shopping logo"/>
+            <span class="brand-logo__name">TRIO</span>
+          </a>
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="index.html#about">About</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#retailers">For Retailers</a>
+            <a href="privacy-policy.html" class="active">Privacy</a>
+            <a href="terms-and-conditions.html" class="">Terms</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="btn btn-outline" href="index.html#contact">Contact</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#retailers">For Retailers</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="legal-hero">
+          <div class="container legal-hero-grid">
+            <div>
+              <span class="eyebrow">Privacy & trust</span>
+              <h1>Your privacy matters at <span class="gradient-text">TRIO.</span></h1>
+              <p>This policy explains what information we collect, why we use it, when we share it and the choices available to customers, sellers and visitors.</p>
+              <div class="meta-row">
+                <span class="meta-pill">Effective: 30 July 2026</span>
+                <span class="meta-pill">Last updated: 30 July 2026</span>
+                <span class="meta-pill">India</span>
+              </div>
+            </div>
+            <aside class="legal-card">
+              <img src="assets/trio-logo-icon.jpg" alt="TRIO"/>
+              <h3>Built around trust</h3>
+              <p>TRIO connects customers and retailers. This policy is designed to make our data practices clear, practical and easy to understand.</p>
+            </aside>
+          </div>
+        </section>
+
+        <div class="container legal-layout">
+          <aside class="toc" aria-label="Page contents">
+            <h3>On this page</h3>
+            <a href="#introduction">Introduction</a>
+<a href="#information">Information We Collect</a>
+<a href="#use">How We Use Information</a>
+<a href="#sharing">How We Share Information</a>
+<a href="#payments">Payments</a>
+<a href="#cookies">Cookies & Analytics</a>
+<a href="#retention">Data Retention</a>
+<a href="#security">Data Security</a>
+<a href="#rights">Your Rights</a>
+<a href="#children">Children's Privacy</a>
+<a href="#changes">Policy Changes</a>
+<a href="#contact">Contact Us</a>
+          </aside>
+          <article class="legal-content">
+            <section class="legal-section" id="introduction">
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how TRIO Commerce (“TRIO”, “we”, “us” or “our”) collects, uses, stores, shares and protects personal information when you use our website, mobile application, customer services, seller services or other related offerings (collectively, the “Platform”).</p>
+  <p>By accessing or using the Platform, you acknowledge that you have read and understood this Privacy Policy. Where consent is required by applicable law, we will seek it separately.</p>
+  <div class="notice"><strong>Important:</strong> Replace any bracketed or business-specific details before publishing, and have the final policy reviewed for your exact data flows, payment providers, delivery partners and legal structure.</div>
+</section>
+<section class="legal-section" id="information">
+  <h2>2. Information We Collect</h2>
+  <h3>Information you provide</h3>
+  <ul>
+    <li>Name, phone number, email address and account credentials.</li>
+    <li>Delivery address, billing details and order-related information.</li>
+    <li>Seller registration details, business information, tax details, bank details and verification documents.</li>
+    <li>Customer support messages, complaints, reviews, ratings and feedback.</li>
+    <li>Marketing preferences and information submitted through forms or promotions.</li>
+  </ul>
+  <h3>Information collected automatically</h3>
+  <ul>
+    <li>Device type, operating system, browser, IP address, app version and device identifiers.</li>
+    <li>Usage activity such as pages viewed, searches, clicks, cart activity and order interactions.</li>
+    <li>Approximate location derived from your device or IP address, and precise location only where you permit it.</li>
+    <li>Cookies, pixels, SDKs and similar technologies used for authentication, analytics and fraud prevention.</li>
+  </ul>
+</section>
+<section class="legal-section" id="use">
+  <h2>3. How We Use Information</h2>
+  <ul>
+    <li>Create and manage customer and seller accounts.</li>
+    <li>Process orders, payments, refunds, delivery and returns.</li>
+    <li>Match customers with nearby retailers and personalise product discovery.</li>
+    <li>Verify sellers, prevent fraud, protect accounts and maintain Platform security.</li>
+    <li>Provide support, respond to enquiries and resolve disputes.</li>
+    <li>Send transactional notifications and, where permitted, promotional communications.</li>
+    <li>Measure performance, improve features, develop new services and conduct internal analytics.</li>
+    <li>Comply with tax, accounting, regulatory, legal and law-enforcement requirements.</li>
+  </ul>
+</section>
+<section class="legal-section" id="sharing">
+  <h2>4. How We Share Information</h2>
+  <p>We may share relevant information only as reasonably necessary with:</p>
+  <ul>
+    <li>Retailers and sellers fulfilling your order.</li>
+    <li>Delivery, logistics and fulfilment partners.</li>
+    <li>Payment gateways, banks and fraud-prevention providers.</li>
+    <li>Cloud hosting, analytics, communication, customer support and technology vendors.</li>
+    <li>Professional advisers, auditors, insurers and regulators.</li>
+    <li>Government authorities or law-enforcement agencies where disclosure is legally required.</li>
+    <li>A successor entity in connection with a merger, acquisition, restructuring or sale of assets.</li>
+  </ul>
+  <p>We do not sell personal information in the ordinary meaning of the term.</p>
+</section>
+<section class="legal-section" id="payments">
+  <h2>5. Payments</h2>
+  <p>Payments may be processed by third-party payment service providers. TRIO may receive transaction references, payment status and limited payment-related information, but card, UPI or banking credentials may be handled directly by the relevant payment provider in accordance with its own terms and privacy practices.</p>
+</section>
+<section class="legal-section" id="cookies">
+  <h2>6. Cookies, Analytics and Similar Technologies</h2>
+  <p>We may use cookies, local storage, SDKs and similar technologies to keep you signed in, remember preferences, understand Platform usage, measure campaigns, improve performance and prevent misuse. You may control certain cookies through your browser or device settings, although disabling them may affect functionality.</p>
+</section>
+<section class="legal-section" id="retention">
+  <h2>7. Data Retention</h2>
+  <p>We retain personal information for as long as necessary to provide the Platform, complete transactions, maintain business and tax records, resolve disputes, enforce agreements, prevent fraud and satisfy legal obligations. Retention periods may vary depending on the type of information and the purpose for which it is processed.</p>
+</section>
+<section class="legal-section" id="security">
+  <h2>8. Data Security</h2>
+  <p>We use reasonable administrative, technical and organisational safeguards designed to protect information against unauthorised access, loss, misuse, alteration or disclosure. However, no internet transmission or storage system is completely secure, and we cannot guarantee absolute security.</p>
+  <p>You are responsible for keeping your account credentials confidential and for promptly notifying us of suspected unauthorised access.</p>
+</section>
+<section class="legal-section" id="rights">
+  <h2>9. Your Choices and Rights</h2>
+  <p>Subject to applicable law and verification of your identity, you may request access to, correction of or deletion of certain personal information, withdraw consent where processing is based on consent, update communication preferences or raise a grievance regarding our handling of your information.</p>
+  <p>Some information may be retained where required for legal, security, fraud-prevention, accounting or dispute-resolution purposes.</p>
+</section>
+<section class="legal-section" id="children">
+  <h2>10. Children's Privacy</h2>
+  <p>The Platform is not intended for independent use by children who are not legally capable of entering into a binding contract. A parent or lawful guardian should supervise and authorise any use by a minor.</p>
+</section>
+<section class="legal-section" id="changes">
+  <h2>11. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The revised version will be posted on this page with an updated “Last updated” date. Material changes may also be communicated through the Platform or by other appropriate means.</p>
+</section>
+<section class="contact-box" id="contact">
+  <h2>12. Contact Us</h2>
+  <p>For privacy questions, requests or grievances, contact:</p>
+  <p><strong>TRIO Commerce</strong><br/>
+  Coimbatore, Tamil Nadu, India<br/>
+  Email: <a href="mailto:triocommerce03@gmail.com">triocommerce03@gmail.com</a><br/>
+  Phone: <a href="tel:+918940421744">+91 89404 21744</a></p>
+  <p>For formal publication, add the legal entity name, registered office address and the designated grievance officer's name and contact details.</p>
+</section>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="footer-brand-logo" href="index.html">
+                <img src="assets/trio-logo-full.jpg" alt="TRIO – Everything Nearby"/>
+              </a>
+              <p>India's next-generation commerce platform connecting every retailer with every customer.</p>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <a href="index.html#about">About</a>
+              <a href="index.html#contact">Careers</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+              <h4>Customers</h4>
+              <a href="index.html#categories">Shop</a>
+              <a href="index.html#faq">Help Center</a>
+              <a href="index.html#contact">Support</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="privacy-policy.html">Privacy Policy</a>
+              <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© <span id="year"></span> TRIO Commerce. All rights reserved.</span>
+            <span>Made for businesses across India.</span>
+          </div>
+        </div>
+      </footer>
+      <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+      <script>
+const backTop = document.getElementById('backTop');
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 500);
+});
+backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  document.body.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  menuBtn.setAttribute('aria-expanded','false');
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    </body>
+    </html>

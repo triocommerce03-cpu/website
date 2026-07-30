@@ -1,0 +1,439 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="Read the terms governing use of the TRIO Commerce marketplace and related services."/>
+      <meta name="theme-color" content="#ffb800"/>
+      <title>Terms & Conditions | TRIO Commerce</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"/>
+      <link href="assets/trio-logo-icon.jpg" rel="icon" type="image/jpeg"/>
+      <style>
+:root{
+  --primary:#ffb800;
+  --primary-2:#ffca3a;
+  --secondary:#1f1f1f;
+  --accent:#15c2a4;
+  --ink:#17152a;
+  --muted:#6f6b80;
+  --soft:#fff9e8;
+  --white:#ffffff;
+  --border:rgba(42,35,78,.11);
+  --shadow:0 20px 55px rgba(46,33,117,.12);
+  --radius:24px;
+  --header-h:78px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 15% 5%, rgba(255,202,58,.13), transparent 27%),
+    radial-gradient(circle at 88% 18%, rgba(255,109,63,.10), transparent 23%),
+    #fff;
+  font-family:"Manrope",sans-serif;
+  overflow-x:hidden;
+}
+body.menu-open{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+.container{width:min(1180px, calc(100% - 36px));margin:auto}
+h1,h2,h3{font-family:"Outfit",sans-serif;margin:0;line-height:1.08}
+h1{font-size:clamp(2.7rem,6vw,5rem);letter-spacing:-.05em}
+h2{font-size:clamp(1.65rem,3vw,2.45rem);letter-spacing:-.03em}
+h3{font-size:1.12rem}
+p,li{line-height:1.75;color:var(--muted)}
+.gradient-text{
+  background:linear-gradient(105deg,var(--primary),#8d54ef 52%,var(--secondary));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.site-header{
+  position:fixed;inset:0 0 auto;z-index:1000;height:var(--header-h);
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(18px);
+  box-shadow:0 10px 35px rgba(30,24,64,.08);
+  border-bottom:1px solid rgba(30,24,64,.06);
+}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand-logo{display:inline-flex;align-items:center;gap:11px;min-width:max-content}
+.brand-logo__icon{
+  width:50px;height:50px;object-fit:cover;object-position:center;border-radius:15px;
+  background:#fff;box-shadow:0 7px 20px rgba(32,28,18,.14);
+  border:1px solid rgba(31,31,31,.07);
+}
+.brand-logo__name{font:800 1.62rem "Outfit",sans-serif;letter-spacing:.06em;color:#1f1f1f}
+.nav-links{display:flex;align-items:center;gap:25px;font-weight:700;font-size:.9rem}
+.nav-links a{color:#4e4961;transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.menu-btn{display:none;border:0;background:transparent;padding:7px}
+.menu-btn span{display:block;width:26px;height:2px;background:var(--ink);margin:5px;border-radius:2px}
+.mobile-menu{display:none}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:49px;padding:0 20px;border-radius:14px;font-weight:800;
+  border:1px solid transparent;transition:.25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{
+  background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;
+  box-shadow:0 12px 28px rgba(255,184,0,.28)
+}
+.btn-outline{color:var(--primary);border-color:rgba(255,184,0,.25);background:rgba(255,255,255,.65)}
+.legal-hero{padding:150px 0 75px;position:relative}
+.legal-hero-grid{display:grid;grid-template-columns:1fr .72fr;gap:60px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;color:var(--primary);font-weight:800;
+  font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:9px 13px;border-radius:999px;background:rgba(255,184,0,.09);
+  border:1px solid rgba(255,184,0,.12);
+}
+.legal-hero p{font-size:1.04rem;max-width:710px;margin:22px 0 0}
+.legal-card{
+  padding:30px;border-radius:30px;background:linear-gradient(145deg,#21183d,#5c39d7);
+  color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden
+}
+.legal-card:after{
+  content:"";position:absolute;width:210px;height:210px;border-radius:50%;
+  background:rgba(255,255,255,.08);right:-70px;top:-80px
+}
+.legal-card img{
+  width:95px;border-radius:18px;padding:6px;background:#fff;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);position:relative;z-index:2
+}
+.legal-card h3{margin:22px 0 8px;position:relative;z-index:2}
+.legal-card p{color:rgba(255,255,255,.75);font-size:.9rem;margin:0;position:relative;z-index:2}
+.meta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.meta-pill{
+  padding:10px 14px;border:1px solid var(--border);border-radius:999px;
+  background:#fff;font-size:.8rem;font-weight:800;color:#5f596e
+}
+.legal-layout{
+  display:grid;grid-template-columns:290px minmax(0,1fr);gap:34px;
+  padding:34px 0 95px;align-items:start
+}
+.toc{
+  position:sticky;top:105px;padding:24px;border-radius:22px;background:#fff;
+  border:1px solid var(--border);box-shadow:0 14px 34px rgba(34,27,78,.07)
+}
+.toc h3{margin-bottom:14px}
+.toc a{
+  display:block;padding:9px 0;color:#6a6478;font-size:.88rem;font-weight:700;
+  border-bottom:1px solid rgba(42,35,78,.07)
+}
+.toc a:last-child{border-bottom:0}
+.toc a:hover{color:var(--primary)}
+.legal-content{display:grid;gap:18px}
+.legal-section{
+  padding:30px;border-radius:22px;border:1px solid var(--border);background:#fff;
+  box-shadow:0 12px 32px rgba(34,27,78,.05)
+}
+.legal-section h2{margin-bottom:14px}
+.legal-section h3{margin:22px 0 8px}
+.legal-section p{margin:0 0 12px}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul,.legal-section ol{padding-left:22px;margin:10px 0}
+.notice{
+  padding:18px 20px;border-radius:16px;background:var(--soft);
+  border:1px solid rgba(255,184,0,.18);color:#5e5667
+}
+.contact-box{
+  background:linear-gradient(120deg,#171326,#5532d7);color:#fff;
+  border-radius:22px;padding:28px
+}
+.contact-box p,.contact-box a{color:rgba(255,255,255,.78)}
+.contact-box a{font-weight:800}
+footer{background:#100d1b;color:#fff;padding:60px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:35px}
+.footer-brand-logo{
+  display:inline-block;width:170px;max-width:100%;padding:8px;background:#fff;
+  border-radius:20px;box-shadow:0 14px 35px rgba(0,0,0,.18)
+}
+.footer-brand-logo img{width:100%;border-radius:14px}
+.footer-brand p{color:#a7a2b7;max-width:330px}
+.footer-col h4{margin:4px 0 18px;font-family:"Outfit"}
+.footer-col a{display:block;color:#aaa5b7;margin:10px 0;font-size:.86rem}
+.footer-col a:hover{color:#fff}
+.footer-bottom{
+  margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:20px;color:#888294;
+  font-size:.79rem;flex-wrap:wrap
+}
+.back-top{
+  position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:14px;border:0;
+  background:var(--primary);color:#fff;box-shadow:0 15px 35px rgba(255,184,0,.3);
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;z-index:800
+}
+.back-top.show{opacity:1;pointer-events:auto;transform:none}
+@media(max-width:950px){
+  .nav-links{display:none}.menu-btn{display:block}
+  .mobile-menu{
+    position:fixed;inset:var(--header-h) 0 0;background:#fff;padding:28px;
+    display:flex;flex-direction:column;gap:18px;transform:translateX(100%);transition:.3s
+  }
+  .mobile-menu.open{transform:none}
+  .mobile-menu a{font-size:1.1rem;font-weight:800;padding:8px 0;border-bottom:1px solid var(--border)}
+  .legal-hero-grid{grid-template-columns:1fr}
+  .legal-layout{grid-template-columns:1fr}
+  .toc{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:600px){
+  .container{width:min(100% - 24px,1180px)}
+  .nav-actions .btn{display:none}
+  .brand-logo__name{display:none}
+  .brand-logo__icon{width:48px;height:48px}
+  .legal-hero{padding-top:120px}
+  .legal-section{padding:23px 19px}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+    </head>
+    <body>
+      <header class="site-header">
+        <div class="container nav">
+          <a class="brand-logo" href="index.html" aria-label="TRIO home">
+            <img class="brand-logo__icon" src="assets/trio-logo-icon.jpg" alt="TRIO shopping logo"/>
+            <span class="brand-logo__name">TRIO</span>
+          </a>
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="index.html#about">About</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#retailers">For Retailers</a>
+            <a href="privacy-policy.html" class="">Privacy</a>
+            <a href="terms-and-conditions.html" class="active">Terms</a>
+          </nav>
+          <div class="nav-actions">
+            <a class="btn btn-outline" href="index.html#contact">Contact</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#retailers">For Retailers</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="legal-hero">
+          <div class="container legal-hero-grid">
+            <div>
+              <span class="eyebrow">Platform terms</span>
+              <h1>Clear rules for using <span class="gradient-text">TRIO.</span></h1>
+              <p>These Terms explain the rights, responsibilities and conditions that apply when customers, retailers and visitors access or use the TRIO Platform.</p>
+              <div class="meta-row">
+                <span class="meta-pill">Effective: 30 July 2026</span>
+                <span class="meta-pill">Last updated: 30 July 2026</span>
+                <span class="meta-pill">India</span>
+              </div>
+            </div>
+            <aside class="legal-card">
+              <img src="assets/trio-logo-icon.jpg" alt="TRIO"/>
+              <h3>Fair use. Better commerce.</h3>
+              <p>These Terms support safe transactions, dependable seller standards and a transparent experience for everyone using TRIO.</p>
+            </aside>
+          </div>
+        </section>
+
+        <div class="container legal-layout">
+          <aside class="toc" aria-label="Page contents">
+            <h3>On this page</h3>
+            <a href="#acceptance">Acceptance of Terms</a>
+<a href="#eligibility">Eligibility & Accounts</a>
+<a href="#marketplace">Marketplace Role</a>
+<a href="#orders">Orders & Pricing</a>
+<a href="#payments">Payments</a>
+<a href="#delivery">Delivery</a>
+<a href="#returns">Returns & Refunds</a>
+<a href="#seller">Seller Obligations</a>
+<a href="#conduct">Prohibited Conduct</a>
+<a href="#content">Intellectual Property</a>
+<a href="#liability">Disclaimers & Liability</a>
+<a href="#indemnity">Indemnity</a>
+<a href="#termination">Suspension & Termination</a>
+<a href="#law">Governing Law</a>
+<a href="#changes">Changes</a>
+<a href="#contact">Contact Us</a>
+          </aside>
+          <article class="legal-content">
+            <section class="legal-section" id="acceptance">
+  <h2>1. Acceptance of Terms</h2>
+  <p>These Terms and Conditions (“Terms”) govern your access to and use of the TRIO website, mobile application, customer services, seller services and related offerings (collectively, the “Platform”). By accessing, registering for or using the Platform, you agree to be bound by these Terms and our Privacy Policy.</p>
+  <p>If you do not agree, you must not use the Platform.</p>
+  <div class="notice"><strong>Important:</strong> This is a practical website draft based on the details visible in your existing TRIO page. It should be legally reviewed and customised before launch, particularly for your exact entity name, GST details, return model, delivery model, commissions and dispute process.</div>
+</section>
+<section class="legal-section" id="eligibility">
+  <h2>2. Eligibility and Accounts</h2>
+  <ul>
+    <li>You must be legally capable of entering into a binding contract under applicable law.</li>
+    <li>You must provide accurate, current and complete information during registration.</li>
+    <li>You are responsible for safeguarding your login credentials and all activity under your account.</li>
+    <li>You must promptly notify us if you suspect unauthorised use of your account.</li>
+    <li>We may request identity, business, tax, bank or address verification before enabling certain features.</li>
+  </ul>
+</section>
+<section class="legal-section" id="marketplace">
+  <h2>3. TRIO's Marketplace Role</h2>
+  <p>TRIO provides a technology platform that connects customers with participating retailers and sellers. Unless expressly stated otherwise, the seller is responsible for the products listed, including their description, price, availability, quality, legality, warranty and fulfilment.</p>
+  <p>TRIO may facilitate discovery, ordering, payment, delivery coordination, customer support and returns. The exact contracting arrangement may depend on the product, seller and transaction.</p>
+</section>
+<section class="legal-section" id="orders">
+  <h2>4. Product Listings, Pricing and Orders</h2>
+  <ul>
+    <li>Product images and descriptions are for reference and may vary slightly from the delivered item.</li>
+    <li>Prices, discounts, taxes, delivery charges and availability may change before an order is confirmed.</li>
+    <li>An order is an offer to purchase and may be accepted, rejected or cancelled due to stock, pricing, payment, verification, delivery or compliance issues.</li>
+    <li>Obvious pricing or listing errors may be corrected, and affected orders may be cancelled with an appropriate refund.</li>
+    <li>Quantity limits may apply to prevent misuse, resale or stock manipulation.</li>
+  </ul>
+</section>
+<section class="legal-section" id="payments">
+  <h2>5. Payments</h2>
+  <p>Payments may be processed through third-party payment gateways. You agree to provide valid payment information and authorise the applicable charges, including product price, taxes, delivery charges and other disclosed fees.</p>
+  <p>Payment success shown by your bank does not by itself guarantee order confirmation. Where a payment is received for an unconfirmed or cancelled order, the amount will be processed for refund in accordance with the applicable payment provider's timelines.</p>
+</section>
+<section class="legal-section" id="delivery">
+  <h2>6. Delivery and Collection</h2>
+  <p>Delivery estimates are indicative and may be affected by seller readiness, product availability, traffic, weather, address accuracy, customer availability or events beyond reasonable control. You must provide a complete and accurate address and remain available to receive the order.</p>
+  <p>Risk and title may pass in accordance with the seller's applicable terms and the nature of the transaction. Failed delivery caused by incorrect details or customer unavailability may attract additional charges.</p>
+</section>
+<section class="legal-section" id="returns">
+  <h2>7. Returns, Replacements, Cancellations and Refunds</h2>
+  <p>Eligibility depends on the product category, seller policy, condition of the item, reason for return and applicable law. Certain products may be non-returnable for hygiene, safety, perishability, customisation, licensing or other reasons disclosed before purchase.</p>
+  <ul>
+    <li>Raise return or replacement requests within the period displayed for the product or order.</li>
+    <li>Keep the product, packaging, accessories, invoice and tags intact where required.</li>
+    <li>Refunds will ordinarily be made to the original payment method or another permitted method.</li>
+    <li>TRIO or the seller may inspect returned items before approving a refund or replacement.</li>
+  </ul>
+</section>
+<section class="legal-section" id="seller">
+  <h2>8. Seller Obligations</h2>
+  <p>Sellers must maintain valid registrations, licences and tax compliance; provide accurate listings; sell only lawful and genuine products; honour confirmed orders; maintain appropriate inventory; issue invoices; comply with consumer protection requirements; protect customer information; and follow TRIO's operational, delivery, return and quality standards.</p>
+  <p>TRIO may suspend listings, withhold settlements, seek documents or terminate seller access where fraud, counterfeit goods, repeated cancellations, customer harm, legal violations or policy breaches are suspected.</p>
+</section>
+<section class="legal-section" id="conduct">
+  <h2>9. Prohibited Conduct</h2>
+  <p>You must not:</p>
+  <ul>
+    <li>Use the Platform for unlawful, fraudulent, abusive or misleading activity.</li>
+    <li>Interfere with security, functionality, networks or other users.</li>
+    <li>Upload malware, scrape data, reverse engineer the Platform or bypass access controls.</li>
+    <li>Impersonate another person or submit false reviews, claims or verification documents.</li>
+    <li>Buy or sell prohibited, counterfeit, stolen, unsafe or restricted products.</li>
+    <li>Misuse offers, coupons, referrals, refunds, chargebacks or multiple accounts.</li>
+  </ul>
+</section>
+<section class="legal-section" id="content">
+  <h2>10. Intellectual Property and User Content</h2>
+  <p>The Platform, branding, software, designs, text, graphics, logos and related materials are owned by or licensed to TRIO and are protected by applicable intellectual property laws.</p>
+  <p>Where you submit reviews, images, listings or other content, you represent that you have the right to use it and grant TRIO a non-exclusive, worldwide, royalty-free licence to host, reproduce, display and use it for operating and promoting the Platform, subject to applicable law.</p>
+</section>
+<section class="legal-section" id="liability">
+  <h2>11. Disclaimers and Limitation of Liability</h2>
+  <p>The Platform is provided on an “as available” basis. To the extent permitted by law, TRIO does not guarantee uninterrupted access, exact delivery times, continuous availability of every product or complete freedom from errors or third-party misconduct.</p>
+  <p>Nothing in these Terms excludes rights or remedies that cannot lawfully be excluded. Subject to that, TRIO will not be liable for indirect, incidental, special or consequential losses, loss of profit, loss of data or business interruption arising from use of the Platform.</p>
+</section>
+<section class="legal-section" id="indemnity">
+  <h2>12. Indemnity</h2>
+  <p>You agree to indemnify and hold TRIO, its affiliates, officers, employees and service providers harmless from claims, losses, liabilities and reasonable costs arising from your unlawful use of the Platform, breach of these Terms, infringement of third-party rights or, for sellers, products and listings supplied through the Platform.</p>
+</section>
+<section class="legal-section" id="termination">
+  <h2>13. Suspension and Termination</h2>
+  <p>We may restrict, suspend or terminate access, cancel orders, remove listings or take other reasonable action where necessary to protect customers, sellers, TRIO or the public; prevent fraud; comply with law; investigate violations; or enforce these Terms.</p>
+  <p>You may stop using the Platform at any time and may request account closure, subject to completion of pending transactions and retention required by law.</p>
+</section>
+<section class="legal-section" id="law">
+  <h2>14. Governing Law and Disputes</h2>
+  <p>These Terms are governed by the laws of India. Subject to applicable consumer rights and any mandatory dispute-resolution requirements, courts at Coimbatore, Tamil Nadu will have jurisdiction.</p>
+  <p>Before initiating formal proceedings, users are encouraged to contact TRIO support so that the issue can be reviewed and resolved promptly.</p>
+</section>
+<section class="legal-section" id="changes">
+  <h2>15. Changes to These Terms</h2>
+  <p>We may update these Terms to reflect legal, operational or service changes. The revised Terms will be posted with a new “Last updated” date. Continued use of the Platform after the effective date constitutes acceptance of the updated Terms, where permitted by law.</p>
+</section>
+<section class="contact-box" id="contact">
+  <h2>16. Contact Us</h2>
+  <p>For questions, complaints or support:</p>
+  <p><strong>TRIO Commerce</strong><br/>
+  Coimbatore, Tamil Nadu, India<br/>
+  Email: <a href="mailto:triocommerce03@gmail.com">triocommerce03@gmail.com</a><br/>
+  Phone: <a href="tel:+918940421744">+91 89404 21744</a></p>
+  <p>Before publishing, add the legal entity name, registered office, GSTIN/CIN if applicable, grievance officer details and customer-care hours.</p>
+</section>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a class="footer-brand-logo" href="index.html">
+                <img src="assets/trio-logo-full.jpg" alt="TRIO – Everything Nearby"/>
+              </a>
+              <p>India's next-generation commerce platform connecting every retailer with every customer.</p>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <a href="index.html#about">About</a>
+              <a href="index.html#contact">Careers</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+              <h4>Customers</h4>
+              <a href="index.html#categories">Shop</a>
+              <a href="index.html#faq">Help Center</a>
+              <a href="index.html#contact">Support</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="privacy-policy.html">Privacy Policy</a>
+              <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© <span id="year"></span> TRIO Commerce. All rights reserved.</span>
+            <span>Made for businesses across India.</span>
+          </div>
+        </div>
+      </footer>
+      <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+      <script>
+const backTop = document.getElementById('backTop');
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 500);
+});
+backTop.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
+
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  document.body.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  document.body.classList.remove('menu-open');
+  menuBtn.setAttribute('aria-expanded','false');
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+    </body>
+    </html>
