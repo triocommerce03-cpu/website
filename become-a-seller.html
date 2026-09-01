@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Join TRIO as a seller and bring your retail business online."/>
+  <meta name="description" content="Join Vekso as a seller and bring your retail business online."/>
   <meta name="theme-color" content="#ffb800"/>
-  <title>Become a Seller | TRIO Commerce</title>
+  <title>Become a Seller | Vekso</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="icon" href="assets/trio-logo-icon.jpg" type="image/jpeg"/>
+  
 
   <style>
     :root{
@@ -220,15 +220,42 @@
       .mini-stats{grid-template-columns:1fr}
       .footer-grid{grid-template-columns:1fr}
     }
+
+    .vekso-mark{
+      display:grid;place-items:center;
+      font:800 1.42rem "Outfit",sans-serif;
+      color:#17152a;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+    }
+    .hero-logo-mark{
+      width:95px;height:95px;border-radius:19px;background:#fff;
+      display:grid;place-items:center;position:relative;z-index:2;
+      box-shadow:0 12px 28px rgba(0,0,0,.18);
+      font:800 2.7rem "Outfit",sans-serif;color:var(--primary);
+    }
+    .vekso-footer-logo{
+      min-height:72px;display:inline-flex;align-items:center;gap:12px;
+      width:auto;padding:10px 16px;
+    }
+    .footer-v-mark{
+      width:48px;height:48px;border-radius:14px;
+      display:grid;place-items:center;
+      background:linear-gradient(145deg,var(--primary),var(--primary-2));
+      color:#17152a;font:800 1.5rem "Outfit",sans-serif;
+    }
+    .footer-v-name{
+      color:#1f1f1f;font:800 1.55rem "Outfit",sans-serif;letter-spacing:.06em;
+    }
+
   </style>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand-logo" href="index.html" aria-label="TRIO home">
-        <img class="brand-logo__icon" src="assets/trio-logo-icon.jpg" alt="TRIO shopping logo"/>
-        <span class="brand-logo__name">TRIO</span>
+      <a class="brand-logo" href="index.html" aria-label="Vekso home">
+        <span class="brand-logo__icon vekso-mark" aria-hidden="true">V</span>
+        <span class="brand-logo__name">VEKSO</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
@@ -261,20 +288,20 @@
     <section class="seller-hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Sell with TRIO</span>
+          <span class="eyebrow">Sell with Vekso</span>
           <h1>Take your store to <span class="gradient-text">more customers.</span></h1>
-          <p>Join TRIO and create a digital storefront for your Support retail business. Receive online orders, reach nearby customers and grow without technical complexity.</p>
+          <p>Join Vekso and create a digital storefront for your Support retail business. Receive online orders, reach nearby customers and grow without technical complexity.</p>
 
           <div class="benefits">
             <div class="benefit"><span class="benefit-icon">✓</span> Reach customers near your store</div>
             <div class="benefit"><span class="benefit-icon">✓</span> Manage products and inventory online</div>
             <div class="benefit"><span class="benefit-icon">✓</span> Receive secure online orders and payments</div>
-            <div class="benefit"><span class="benefit-icon">✓</span> Get seller support from the TRIO team</div>
+            <div class="benefit"><span class="benefit-icon">✓</span> Get seller support from the Vekso team</div>
           </div>
         </div>
 
         <aside class="hero-card">
-          <img src="assets/trio-logo-icon.jpg" alt="TRIO"/>
+          <span class="hero-logo-mark" aria-label="Vekso">V</span>
           <h2>Start your seller journey</h2>
           <p>Complete the form and our onboarding team will contact you after reviewing your business details.</p>
           <div class="mini-stats">
@@ -426,7 +453,7 @@
               <div class="field full">
                 <div class="checkbox-wrap">
                   <input id="consent" name="consent" type="checkbox" required/>
-                  <label for="consent">I confirm that the information provided is correct and agree to TRIO's <a href="terms-and-conditions.html" target="_blank">Terms &amp; Conditions</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>. <span class="required">*</span></label>
+                  <label for="consent">I confirm that the information provided is correct and agree to Vekso's <a href="terms-and-conditions.html" target="_blank">Terms &amp; Conditions</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>. <span class="required">*</span></label>
                 </div>
               </div>
             </div>
@@ -438,7 +465,7 @@
               <span class="status" id="formStatus" aria-live="polite"></span>
             </div>
 
-            <p class="privacy-note">Your application will be emailed securely to the TRIO onboarding team through EmailJS. Do not submit bank passwords, OTPs or card details.</p>
+            <p class="privacy-note">Your application will be emailed securely to the Vekso onboarding team through EmailJS. Do not submit bank passwords, OTPs or card details.</p>
           </form>
         </div>
       </div>
@@ -450,7 +477,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="footer-brand-logo" href="index.html">
-            <img src="assets/trio-logo-full.jpg" alt="TRIO – Everything Nearby"/>
+            <img src="assets/trio-logo-full.jpg" alt="Vekso – Everything Nearby"/>
           </a>
           <p>India's next-generation commerce platform connecting every retailer with every customer.</p>
         </div>
@@ -476,7 +503,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>© <span id="year"></span> TRIO Commerce. All rights reserved.</span>
+        <span>© <span id="year"></span> Vekso. All rights reserved.</span>
         <span>Made for businesses across India.</span>
       </div>
     </div>
@@ -616,10 +643,10 @@
         sellerForm.reset();
         document.getElementById("state").value = "Tamil Nadu";
         setStatus("Application submitted successfully.", "success");
-        showToast("Thank you. The TRIO team will contact you after reviewing your application.", "success");
+        showToast("Thank you. The Vekso team will contact you after reviewing your application.", "success");
       } catch (error) {
         console.error("EmailJS error:", error);
-        setStatus("Submission failed. Please try again or contact TRIO directly.", "error");
+        setStatus("Submission failed. Please try again or contact Vekso directly.", "error");
         showToast("Unable to send the application. Please email triocommerce03@gmail.com.", "error");
       } finally {
         submitBtn.disabled = false;
